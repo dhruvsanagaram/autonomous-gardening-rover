@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover Field Setup</title>
+</head>
+<body>
+    <h1>Rover Field Setup Form</h1>
+    <form action="/submit" method="post">
+        <!-- Field Dimensions -->
+        <fieldset>
+            <legend>Field Dimensions</legend>
+            <label for="field-length">Length (meters):</label>
+            <input type="number" id="field-length" name="field-length" required>
+            <br>
+            <label for="field-width">Width (meters):</label>
+            <input type="number" id="field-width" name="field-width" required>
+        </fieldset>
+        <br>
+        <!-- Plotting Intervals -->
+        <fieldset>
+            <legend>Plotting Intervals</legend>
+            <label for="plot-interval-x">Interval X (meters):</label>
+            <input type="number" id="plot-interval-x" name="plot-interval-x" required>
+            <br>
+            <label for="plot-interval-y">Interval Y (meters):</label>
+            <input type="number" id="plot-interval-y" name="plot-interval-y" required>
+        </fieldset>
+        <br>
+        <!-- Rover Starting Point -->
+        <fieldset>
+            <legend>Rover Starting Point</legend>
+            <label for="start-x">Starting X Coordinate (meters):</label>
+            <input type="number" id="start-x" name="start-x" required>
+            <br>
+            <label for="start-y">Starting Y Coordinate (meters):</label>
+            <input type="number" id="start-y" name="start-y" required>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
